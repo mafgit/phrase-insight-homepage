@@ -13,7 +13,7 @@ const description =
   "Seamlessly learn languages for FREE with this extension by expanding vocabulary and understanding contextual meanings while reading on web.";
 const extUrl =
   "https://chromewebstore.google.com/detail/jmfekdmpopagjpdnndclpefldgfpgkml?utm_source=item-share-cb";
-const url = ""; // vercel
+const url = "http://localhost:3000"; // todo: vercel
 
 export const metadata: Metadata = {
   title,
@@ -53,7 +53,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     images: [
-      { url: "/og-image.png", alt: "PhraseInsight", width: 1200, height: 630 },
+      {
+        url: `${url}/og-image.png`,
+        alt: "PhraseInsight",
+        width: 1200,
+        height: 630,
+      },
     ],
   },
 };

@@ -1,33 +1,37 @@
 "use client";
 import { FaMountainCity, FaRocket, FaSpellCheck } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Mousewheel } from "swiper/modules";
+import { Navigation, Autoplay, Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const FeaturesSlider = () => {
   return (
-    <div className="w-full rounded-xl mx-auto max-w-[1000px]">
+    <div className="w-full rounded-xl mx-auto max-w-[1000px] [container-type:inline-size]">
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
         centeredSlides={true}
-        observeParents={true}
-        observer={true}
         loop={true}
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+          bulletClass: "swiper-pagination-bullet",
+        }}
         breakpoints={{
-          700: {
+          640: {
             slidesPerView: 2,
           },
-          1000: {
+          960: {
             slidesPerView: 3,
           },
         }}
-        modules={[Navigation, Mousewheel, Autoplay]}
+        modules={[Navigation, Mousewheel, Autoplay, Pagination]}
         mousewheel={{
           enabled: true,
           forceToAxis: true,
