@@ -8,10 +8,10 @@
 
 :root {
   --main: #126297;
-  --background: #fff;
+  --background: #dbe8ff;
   --foreground: #f3f1ff;
   --dark: #272727;
-  --light: #fff;
+  --light: #f0fdff;
   --primary: #00a2ff;
   --secondary: #00e759;
   --purple: #8c52ff;
@@ -43,6 +43,11 @@
     --foreground: #ededed;
   }
 } */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--color-background);
