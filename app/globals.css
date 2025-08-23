@@ -1,26 +1,64 @@
 @import "tailwindcss";
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --main: #126297;
+  --background: #fff;
+  --foreground: #f3f1ff;
+  --dark: #272727;
+  --light: #fff;
+  --primary: #00a2ff;
+  --secondary: #00e759;
+  --purple: #8c52ff;
+  --orange: #dd7941;
+  --green: #2bcd45;
+  --highlight: #83ffbd;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-main: var(--main);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-dark: var(--dark);
+  --color-light: var(--light);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-purple: var(--purple);
+  --color-orange: var(--orange);
+  --color-green: var(--green);
+  --color-highlight: var(--highlight);
+
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-poppins), "Gill Sans", Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  cursor: pointer;
 }
