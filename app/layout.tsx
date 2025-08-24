@@ -10,27 +10,35 @@ const poppins = Poppins({
 });
 
 const title = "PhraseInsight: Expand Vocabulary While Reading";
+const shortTitle = "PhraseInsight";
 const description =
   "Seamlessly learn languages for FREE with this extension by expanding vocabulary and understanding contextual meanings while reading on web.";
-const extUrl =
-  "https://chromewebstore.google.com/detail/jmfekdmpopagjpdnndclpefldgfpgkml?utm_source=item-share-cb";
-const url = "http://localhost:3000"; // todo: vercel
+const url = "https://phrase-insight.vercel.app/";
+const author = "Mohammad Abdullah Farooqui";
 
 export const metadata: Metadata = {
   title,
   description,
+  publisher: author,
   keywords: [
     "vocabulary",
+    "chrome extension",
+    "vocabulary builder",
+    "language tool",
+    "contextual translation",
     "translation",
-    "arabic",
+    "free language learning",
+    "word meaning",
     "extension",
     "language",
     "learn",
+    "phrase insight",
     "read",
+    "arabic",
   ],
   authors: [
     {
-      name: "M. Abdullah Farooqui",
+      name: author,
       url: "https://www.linkedin.com/in/muhammad-abdullah-farooqui-24754b27a/",
     },
   ],
@@ -39,6 +47,8 @@ export const metadata: Metadata = {
     shortcut: "/icon96.png",
     apple: "/icon180.png",
   },
+  applicationName: shortTitle,
+  category: "Education",
   robots: {
     index: true,
     follow: true,
@@ -50,13 +60,13 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: "PhraseInsight",
+    siteName: shortTitle,
     type: "website",
     locale: "en_US",
     images: [
       {
         url: `${url}/og-image.png`,
-        alt: "PhraseInsight",
+        alt: shortTitle,
         width: 1200,
         height: 630,
       },

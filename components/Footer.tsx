@@ -52,7 +52,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <p>© 2025 PhraseInsight</p>
+        <p>© {new Date().getFullYear()} PhraseInsight</p>
       </div>
     </footer>
   );
