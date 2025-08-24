@@ -10,6 +10,7 @@ const Highlights = ({ texts }: { texts: string[] }) => {
     <div className="flex items-center justify-center gap-2 flex-wrap">
       {texts.map((text, i) => (
         <span
+          key={i}
           className={`${
             colors[i % colors.length]
           } text-black px-2 py-1 rounded-md border-1 border-gray-700/15`}

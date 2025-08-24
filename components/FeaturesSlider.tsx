@@ -39,36 +39,43 @@ const FeaturesSlider = () => {
       >
         <SwiperSlide className="">
           <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <FaRocket className="text-orange-400 text-3xl" />
-            <p className="font-semibold">Get Singular, Plural, etc</p>
+            <p className="text-2xl">🚀</p>
+            <p className="font-semibold">Learn Word Forms</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
           <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <FaSpellCheck className="text-red-400 text-3xl" />
-            <p className="font-semibold">Get Verb Forms and Tenses</p>
+            <p className="text-2xl">🌍</p>
+            <p className="font-semibold">Learn Context</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
           <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <FaMountainCity className="text-purple-400 text-3xl" />
-            <p className="font-semibold">Get Contextual Explanations</p>
+            <p className="text-2xl">✅</p>
+            <p className="font-semibold">Get Accurate Translations</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
           <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <FaMountainCity className="text-blue-400 text-3xl" />
-            <p className="font-semibold">Get Examples</p>
+            <p className="text-2xl">📚</p>
+            <p className="font-semibold">Expand Vocabulary</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
           <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <FaMountainCity className="text-green-400 text-3xl" />
-            <p className="font-semibold">Get Grammar Analysis</p>
+            <p className="text-2xl">⚡</p>
+            <p className="font-semibold">Get One-Click Answers</p>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="">
+          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <p className="text-2xl">✍️</p>
+            <p className="font-semibold">Get Real Examples</p>
           </div>
         </SwiperSlide>
       </Swiper>

@@ -8,10 +8,10 @@ const OverviewSection = () => {
     <section id="overview" className="px-2 py-16 text-black/80">
       <div className="container flex flex-col gap-12 mx-auto">
         <h2 className="text-[26px] font-bold text-center text-primary flex items-center justify-center gap-[10px]">
-          <FaRocket className="" /> <span>Overview</span>
+          <span>🚀 Overview</span>
         </h2>
 
-        <div className="flex flex-col gap-12 justify-center">
+        <div className="flex flex-col gap-20 items-center justify-center">
           <Overview n={1} heading="Select Text Anywhere" image="/ss-button.png">
             <p>
               Just select a phrase and click the button that appears.{" "}
@@ -31,7 +31,7 @@ const OverviewSection = () => {
             heading="Choose From Multiple Languages & AI Models"
             image="/ss-preferences.png"
           >
-            <p>
+            <div>
               You can learn many languages such as:
               <div className="flex items-center justify-center gap-2 flex-wrap">
                 <Highlights
@@ -46,7 +46,7 @@ const OverviewSection = () => {
                   ]}
                 />
               </div>
-            </p>
+            </div>
             <p>
               Choose out of multiple AI models such as Gemini and Llama (options
               may vary in future).
@@ -62,7 +62,7 @@ const OverviewSection = () => {
             <p>
               Get context-based translations instead of literal translations.
             </p>
-            <p>
+            <div>
               Get vocabulary details such as:{" "}
               <Highlights
                 texts={[
@@ -75,7 +75,7 @@ const OverviewSection = () => {
                   "...",
                 ]}
               />
-            </p>
+            </div>
           </Overview>
 
           <Overview
@@ -94,7 +94,7 @@ const OverviewSection = () => {
             heading="Get Grammatical Analysis"
             image="/ss-grammar.png"
           >
-            <p>
+            <div>
               Get grammar details such as{" "}
               <Highlights
                 texts={[
@@ -106,7 +106,7 @@ const OverviewSection = () => {
                   "...",
                 ]}
               />
-            </p>
+            </div>
           </Overview>
 
           <Overview
