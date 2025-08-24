@@ -1,6 +1,7 @@
 import React from "react";
 import Overview from "./Overview";
 import { FaRocket } from "react-icons/fa6";
+import Highlights from "./Highlights";
 
 const OverviewSection = () => {
   return (
@@ -13,87 +14,98 @@ const OverviewSection = () => {
         <div className="flex flex-col gap-12 justify-center">
           <Overview n={1} heading="Select Text Anywhere" image="/ss-button.png">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Just select a phrase and click the button that appears.{" "}
+              <span className="text-purple">
+                The context surrounding the phrase will automatically be
+                captured!
+              </span>
             </p>
-
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Or you can press <span className="text-purple">Alt+Shift+R</span>{" "}
+              after selecting text to get the same result.
             </p>
           </Overview>
 
           <Overview
             n={2}
-            heading="Multiple Languages & AI Models"
+            heading="Choose From Multiple Languages & AI Models"
             image="/ss-preferences.png"
           >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              You can learn many languages such as:
+              <div className="flex items-center justify-center gap-2 flex-wrap">
+                <Highlights
+                  texts={[
+                    "Arabic",
+                    "Spanish",
+                    "German",
+                    "Italian",
+                    "French",
+                    "English",
+                    "...",
+                  ]}
+                />
+              </div>
             </p>
-
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Choose out of multiple AI models such as Gemini and Llama (options
+              may vary in future).
             </p>
+            <p>Special handling for Arabic phrases.</p>
           </Overview>
 
           <Overview
             n={3}
-            heading="Expand Vocabulary Instantly"
+            heading="Expand Your Vocabulary Instantly"
             image="/ss-translation.png"
           >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Get context-based translations instead of literal translations.
             </p>
-
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Get vocabulary details such as:{" "}
+              <Highlights
+                texts={[
+                  "singular",
+                  "plural",
+                  "present",
+                  "past",
+                  "future",
+                  "verb pattern",
+                  "...",
+                ]}
+              />
             </p>
           </Overview>
 
           <Overview
             n={4}
-            heading="Understand Contextual Meanings"
+            heading="Understand Context Like a Native"
             image="/ss-context.png"
           >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
-            </p>
-
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Get detailed explanation of the context of the phrase in the story
+              or article you are reading.
             </p>
           </Overview>
 
           <Overview
             n={5}
-            heading="Get Grammar Analysis"
+            heading="Get Grammatical Analysis"
             image="/ss-grammar.png"
           >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
-            </p>
-
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
+              Get grammar details such as{" "}
+              <Highlights
+                texts={[
+                  "noun states",
+                  "verb form",
+                  "adjective",
+                  "adverb",
+                  "preposition",
+                  "...",
+                ]}
+              />
             </p>
           </Overview>
 
@@ -102,17 +114,7 @@ const OverviewSection = () => {
             heading="Get Example Sentences"
             image="/ss-examples.png"
           >
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
-            </p>
-
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-              repudiandae quidem nostrum vel magni praesentium blanditiis
-              architecto est cupiditate quasi!
-            </p>
+            <p>Learn how real people use the phrase in daily conversations.</p>
           </Overview>
         </div>
       </div>
