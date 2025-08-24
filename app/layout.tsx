@@ -47,6 +47,9 @@ export const metadata: Metadata = {
     shortcut: "/icon96.png",
     apple: "/icon180.png",
   },
+  verification: {
+    google: "xpqu-T356oUwoaUQpb0Ih0lJO9lXlaQPkKXo5Kw-MkY",
+  },
   applicationName: shortTitle,
   category: "Education",
   robots: {
