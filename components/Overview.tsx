@@ -1,37 +1,40 @@
 import React from "react";
-import { Fa1 } from "react-icons/fa6";
 
-const Overview = ({ reverse = false }) => {
+const Overview = ({
+  n,
+  heading,
+  children,
+  image
+}: {
+  n: number;
+  heading: string;
+  children: React.ReactNode;
+  image: string;
+}) => {
   return (
     <div
-      className={`shadow-lg shadow-primary/15 border-1 border-black/10 bg-linear-45 from-purple/10 to-primary/20 p-6 rounded-xl flex gap-6 max-w-[1000px] mx-auto ${
-        reverse ? "flex-row-reverse" : ""
+      className={`rounded-xl flex gap-x-4 gap-y-6 flex-col lg:flex-row items-center lg:justify-evenly lg:items-stretch max-w-[1000px] mx-auto ${
+        n % 2 === 0 ? "lg:flex-row-reverse" : ""
       }`}
     >
-      <img src="/ss-translation.png" alt="" className="rounded-xl w-[400px]" />
+      <img
+        src={image}
+        alt="overview screenshot"
+        className="rounded-xl w-[400px] max-w-[100%] shadow-lg shadow-primary/15 border-[2px] border-black/10"
+      />
 
-      <div className="flex flex-col gap-2 leading-loose text-center font-semibold text-dark/75">
-        <div className="text-2xl font-bold text-primary  flex gap-4 my-4 items-center justify-center">
-          <div className="relative w-[35px] h-[35px]">
+      <div className="flex p-2 flex-col items-center justify-center gap-2 leading-loose text-center font-semibold text-dark/75 bg-linear-45 from-purple/10 to-primary/20 shadow-lg shadow-primary/15 border-1 border-black/10 rounded-xl ">
+        <div className="text-2xl font-bold text-primary  flex flex-col sm:flex-row gap-4 my-4 items-center justify-center">
+          <div className="relative min-w-[35px] h-[35px]">
             <div className="w-full h-full rounded-md rotate-45 bg-primary"></div>
             <p className="text-xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold">
-              1
+              {n}
             </p>
           </div>{" "}
-          <h3>Lorem ipsum dolor sit.</h3>
+          <h3 className="">{heading}</h3>
         </div>
 
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-          repudiandae quidem nostrum vel magni praesentium blanditiis architecto
-          est cupiditate quasi!
-        </p>
-
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem,
-          repudiandae quidem nostrum vel magni praesentium blanditiis architecto
-          est cupiditate quasi!
-        </p>
+        {children}
       </div>
     </div>
   );

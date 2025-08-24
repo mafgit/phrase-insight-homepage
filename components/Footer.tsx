@@ -2,21 +2,17 @@ import Link from "next/link";
 import React from "react";
 import { FaArrowUp, FaGithub, FaLinkedin, FaMessage } from "react-icons/fa6";
 import CTAButton from "./CTAButton";
+import LogoTitle from "./LogoTitle";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-main to-[#571297] text-center px-8 py-12">
-      <div className="container w-max mx-auto flex flex-col gap-8 items-center justify-center">
-        <div className="flex gap-4 items-center justify-center flex-wrap">
-          <img src="/icon180.png" alt="logo" className="rounded-lg w-[40px]" />
-          <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-[#fb74ff] from-[#81ffed]">
-            PhraseInsight: Expand Vocabulary While Reading
-          </h1>
-        </div>
+    <footer className="bg-gradient-to-r from-main to-[#571297] text-center px-4 sm:px-8 py-12">
+      <div className="container w-full max-w-max mx-auto flex flex-col gap-8 items-center justify-center">
+        <LogoTitle smaller />
 
         <CTAButton full />
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-wrap items-center justify-center">
           <Link
             href="#overview"
             className="transition-all duration-300 ease-in-out hover:bg-white/15 flex items-center justify-center gap-2 font-semibold bg-white/10 px-2 py-1 rounded-md"
@@ -26,7 +22,9 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/"
+            href="https://forms.gle/UJiK2Zv3do4dNbVN6"
+            target="_blank"
+            rel="noopener noreferrer"
             className="transition-all duration-300 ease-in-out hover:bg-white/15 flex items-center justify-center gap-2 font-semibold bg-white/10 px-2 py-1 rounded-md"
           >
             <FaMessage className="text-xl" />
@@ -34,7 +32,9 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/"
+            href="https://www.linkedin.com/in/muhammad-abdullah-farooqui-24754b27a/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="transition-all duration-300 ease-in-out hover:bg-white/15 flex items-center justify-center gap-2 font-semibold bg-white/10 px-2 py-1 rounded-md"
           >
             <FaLinkedin className="text-blue-500 text-2xl" />
@@ -42,7 +42,9 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/"
+            href="https://github.com/mafgit"
+            target="_blank"
+            rel="noopener noreferrer"
             className="transition-all duration-300 ease-in-out hover:bg-white/15 flex items-center justify-center gap-2 font-semibold bg-white/10 px-2 py-1 rounded-md"
           >
             <FaGithub className="text-2xl" />
