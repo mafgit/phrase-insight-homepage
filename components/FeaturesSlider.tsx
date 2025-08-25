@@ -1,5 +1,14 @@
 "use client";
-import { FaMountainCity, FaRocket, FaSpellCheck } from "react-icons/fa6";
+import {
+  FaBolt,
+  FaBookOpen,
+  FaEarthAsia,
+  FaLanguage,
+  FaMountainCity,
+  FaQuoteRight,
+  FaRocket,
+  FaSpellCheck,
+} from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -10,7 +19,7 @@ const FeaturesSlider = () => {
   return (
     <div className="w-full rounded-xl mx-auto max-w-[1000px] [container-type:inline-size]">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={10}
         slidesPerView={1}
         centeredSlides={true}
         loop={true}
@@ -38,44 +47,44 @@ const FeaturesSlider = () => {
         }}
       >
         <SwiperSlide className="">
-          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <p className="text-2xl">🚀</p>
+          <div className="opacity-85 scale-[96%] transition-all duration-300 ease-in-out max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <FaSpellCheck className="text-3xl  " />
             <p className="font-semibold">Learn Word Forms</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
-          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <p className="text-2xl">🌍</p>
-            <p className="font-semibold">Learn Context</p>
+          <div className="opacity-85 scale-[96%] transition-all duration-300 ease-in-out max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <FaEarthAsia className="text-3xl   " />
+            <p className="font-semibold">Understand Context</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
-          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <p className="text-2xl">✅</p>
-            <p className="font-semibold">Get Accurate Translations</p>
+          <div className="opacity-85 scale-[96%] transition-all duration-300 ease-in-out max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <FaLanguage className="text-3xl   " />
+            <p className="font-semibold">Accurate Translations</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
-          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <p className="text-2xl">📚</p>
+          <div className="opacity-85 scale-[96%] transition-all duration-300 ease-in-out max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <FaBookOpen className="text-3xl   " />
             <p className="font-semibold">Expand Vocabulary</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
-          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <p className="text-2xl">⚡</p>
-            <p className="font-semibold">Get One-Click Answers</p>
+          <div className="opacity-85 scale-[96%] transition-all duration-300 ease-in-out max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <FaBolt className="text-3xl  " />
+            <p className="font-semibold">One-Click Answers</p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="">
-          <div className="max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
-            <p className="text-2xl">✍️</p>
-            <p className="font-semibold">Get Real Examples</p>
+          <div className="opacity-85 scale-[96%] transition-all duration-300 ease-in-out max-h-[130px] min-h-[130px] bg-white/20 p-4 rounded-xl flex flex-col gap-4 items-center justify-center">
+            <FaQuoteRight className="text-3xl   " />
+            <p className="font-semibold ">Real Examples</p>
           </div>
         </SwiperSlide>
       </Swiper>

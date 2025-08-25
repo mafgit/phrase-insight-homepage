@@ -24,9 +24,9 @@ const Overview = ({
       />
 
       <div className="flex p-8 flex-col items-center justify-center gap-2 leading-loose text-center font-semibold text-dark/75 bg-linear-45 from-purple/10 to-primary/20 shadow-lg shadow-primary/15 border-1 border-black/10 rounded-xl ">
-        <div className="text-2xl font-bold text-primary  flex flex-col gap-4 my-4 items-center justify-center">
+        <div className="text-2xl font-bold text-main  flex flex-col gap-4 my-4 items-center justify-center">
           <div className="relative min-w-[35px] h-[35px]">
-            <div className="w-full h-full rounded-md rotate-45 bg-primary"></div>
+            <div className="w-full h-full rounded-md rotate-45 bg-main"></div>
             <p className="text-xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold">
               {n}
             </p>
