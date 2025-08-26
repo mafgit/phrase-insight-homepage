@@ -50,7 +50,7 @@ const OverviewSection = () => {
               Choose out of multiple AI models such as Gemini and Llama (options
               may vary in future).
             </p>
-            <p>Special handling for Arabic phrases.</p>
+            <p>Special support for Arabic phrases also provided.</p>
           </Overview>
 
           <Overview

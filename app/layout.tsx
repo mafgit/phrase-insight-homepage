@@ -29,6 +29,8 @@ export const metadata: Metadata = {
     "translation",
     "free language learning",
     "word meaning",
+    "no tab switching",
+    "immersive language learning",
     "extension",
     "language",
     "learn",
