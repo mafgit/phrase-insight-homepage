@@ -4,6 +4,9 @@ import Script from "next/script";
 
 const extUrl =
   "https://chromewebstore.google.com/detail/jmfekdmpopagjpdnndclpefldgfpgkml?utm_source=item-share-cb?utm_source=landingpage&utm_medium=website&utm_campaign=landing_page";
+// const dateModified = new Date().toISOString().slice(0, 10);
+const softwareVersion = process.env.NEXT_PUBLIC_EXTENSION_VERSION;
+const dateModified = process.env.NEXT_PUBLIC_EXTENSION_DATE_MODIFIED;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -21,9 +24,9 @@ const jsonLd = {
     priceCurrency: "USD",
   },
   downloadUrl: extUrl,
-  softwareVersion: process.env.NEXT_PUBLIC_EXTENSION_VERSION,
+  softwareVersion,
   datePublished: "2025-03-22",
-  // dateModified: "2025-08-25",
+  dateModified,
   publisher: {
     "@type": "Person",
     name: "Mohammad Abdullah Farooqui",
@@ -35,7 +38,7 @@ const jsonLd = {
     email: "mafishere@gmail.com",
   },
   featureList: [
-    "Smart Context-Based Translations",
+    "Smart Context Based Translations",
     "Deep Contextual Analysis",
     "Real Usage Examples",
     "Grammar Breakdowns",
