@@ -3,6 +3,7 @@ import React from "react";
 import { FaArrowUp, FaGithub, FaLinkedin, FaMessage } from "react-icons/fa6";
 import CTAButton from "./CTAButton";
 import LogoTitle from "./LogoTitle";
+import ProductHuntBadge from "./ProductHuntBadge";
 
 const Footer = () => {
   return (
@@ -10,7 +11,10 @@ const Footer = () => {
       <div className="container w-full max-w-max mx-auto flex flex-col gap-8 items-center justify-center">
         <LogoTitle smaller />
 
-        <CTAButton full />
+        <div className="flex gap-2 flex-wrap items-center justify-center">
+          <CTAButton />
+          <ProductHuntBadge />
+        </div>
 
         <div className="flex gap-3 flex-wrap items-center justify-center">
           <Link
