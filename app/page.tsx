@@ -15,7 +15,7 @@ const jsonLd = {
   alternateName: "PhraseInsight",
   description:
     "A free Chrome extension that transforms how you learn languages online by providing smart context-based translations, word insights, grammar analysis, and real usage examples while reading any web content.",
-  url: "https://phrase-insight.vercel.app/",
+  url: "https://phraseinsight.vercel.app/",
   applicationCategory: "EducationalApplication",
   operatingSystem: "Chrome",
   offers: {

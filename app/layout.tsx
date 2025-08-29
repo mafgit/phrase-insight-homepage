@@ -13,7 +13,7 @@ const title = "PhraseInsight: Expand Vocabulary While Reading";
 const shortTitle = "PhraseInsight";
 const description =
   "Seamlessly learn languages for FREE with this extension by expanding vocabulary and understanding contextual meanings while reading on web.";
-const url = "https://phrase-insight.vercel.app/";
+const url = "https://phraseinsight.vercel.app/";
 const author = "Mohammad Abdullah Farooqui";
 
 export const metadata: Metadata = {

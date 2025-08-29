@@ -1,8 +1,8 @@
 # ✨ PhraseInsight: Expand Vocabulary While Reading
 
-> Stop Breaking Your Reading Flow to Look Up Words! 🚀
+> Stop switching tabs to learn vocabulary &amp; expressions! 🚀
 
-PhraseInsight is a **free chrome extension** that transforms how you learn languages online. Instead of switching between tabs or apps, **simply highlight any word or phrase** while reading articles, blogs, or social media - and click the popup button to instantly rich insights:
+PhraseInsight is a **free chrome extension** that transforms how you learn languages online. Instead of switching between tabs or apps, **simply highlight any word or phrase** while reading articles, blogs, or social media - and click the button that pops up to instantly rich insights to build your vocabulary effectively through immersion!
 
 ## 🔑 Key Features
 
@@ -10,7 +10,7 @@ PhraseInsight is a **free chrome extension** that transforms how you learn langu
 - 🧠 Deep Contextual Analysis of how phrases fit within stories
 - 📚 Real Usage Examples to understand natural language patterns
 - 🔤 Grammar Breakdowns that make sense in context
-- 🤖 Multiple AI Models *(currently Gemini & Llama)* for varied learning styles
+- 🤖 Multiple AI Models *(currently Gemini &amp; Llama)* for varied learning styles
 - 🌍 Multi-language Support *with special support for Arabic learning*
 
 ## ⚡ How It Works
