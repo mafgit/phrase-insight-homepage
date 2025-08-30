@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Overview = ({
@@ -17,6 +18,13 @@ const Overview = ({
         n % 2 === 0 ? "lg:flex-row-reverse" : ""
       }`}
     >
+      {/* <Image
+        src={image}
+        sizes="100vw"
+        fill
+        alt="overview screenshot"
+        className="rounded-xl h-max max-h-[500px] self-center shadow-lg shadow-primary/15 border-[2px] border-black/10"
+      /> */}
       <img
         src={image}
         alt="overview screenshot"

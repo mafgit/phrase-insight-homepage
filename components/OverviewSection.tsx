@@ -15,8 +15,8 @@ const OverviewSection = () => {
             <p>
               Just select a phrase and click the button that appears.{" "}
               <strong className="text-main font-semibold">
-                "The context surrounding the phrase will automatically be
-                captured!"
+                &ldquo;The context surrounding the phrase will automatically be
+                captured!&rdquo;
               </strong>
             </p>
             <p>

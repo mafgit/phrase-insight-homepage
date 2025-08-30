@@ -9,7 +9,7 @@ const LogoTitle = ({ smaller = false }) => {
           v{process.env.NEXT_PUBLIC_EXTENSION_VERSION}
         </span>
       </div>
-      {smaller ? (
+      {!smaller ? (
         <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-[#fb74ff] from-[#81ffed]">
           PhraseInsight: Expand Vocabulary While Reading
         </h1>
