@@ -124,11 +124,9 @@ const jsonLd = {
 export default function Home() {
   return (
     <>
-      <div>
-        <Header />
+      <Header />
 
-        <OverviewSection />
-      </div>
+      <OverviewSection />
 
       <Script
         id="product-json-ld"

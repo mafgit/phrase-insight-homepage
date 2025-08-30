@@ -10,9 +10,12 @@ const Header = () => {
           <LogoTitle />
 
           <p className="text-xl max-w-[900px] text-light/95">
-            Seamlessly learn languages for FREE with this extension by expanding
-            vocabulary and understanding contextual meanings while reading on
-            web.
+            Seamlessly{" "}
+            <strong className="font-normal">Learn Languages For Free</strong>{" "}
+            With This Extension By Expanding{" "}
+            <strong className="font-normal">Vocabulary</strong> & Understanding{" "}
+            <strong className="font-normal">Contextual Meanings</strong> While{" "}
+            <strong className="font-normal">Reading</strong> On Web.
           </p>
 
           <FeaturesSlider />

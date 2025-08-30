@@ -16,7 +16,7 @@ const Footer = () => {
           <ProductHuntBadge />
         </div>
 
-        <div className="flex gap-3 flex-wrap items-center justify-center">
+        <nav className="flex gap-3 flex-wrap items-center justify-center">
           <Link
             href="#overview"
             className="transition-all duration-300 ease-in-out hover:bg-white/15 flex items-center justify-center gap-2 font-semibold bg-white/10 px-2 py-1 rounded-md"
@@ -54,7 +54,7 @@ const Footer = () => {
             <FaGithub className="text-2xl" />
             <span>GitHub</span>
           </Link>
-        </div>
+        </nav>
 
         <p>© {new Date().getFullYear()} PhraseInsight</p>
       </div>

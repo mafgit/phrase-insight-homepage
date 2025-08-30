@@ -4,7 +4,7 @@ import Highlights from "./Highlights";
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="px-2 py-16 text-black/80">
+    <main id="overview" className="px-2 py-16 text-black/80">
       <div className="container flex flex-col gap-12 mx-auto">
         <h2 className="text-[26px] font-bold text-center text-main flex items-center justify-center gap-[10px]">
           <span>🚀 Overview</span>
@@ -14,10 +14,10 @@ const OverviewSection = () => {
           <Overview n={1} heading="Select Text Anywhere" image="/ss-button.png">
             <p>
               Just select a phrase and click the button that appears.{" "}
-              <span className="text-main">
-                The context surrounding the phrase will automatically be
-                captured!
-              </span>
+              <strong className="text-main font-semibold">
+                "The context surrounding the phrase will automatically be
+                captured!"
+              </strong>
             </p>
             <p>
               Or you can press <span className="text-main">Alt+Shift+R</span>{" "}
@@ -117,7 +117,7 @@ const OverviewSection = () => {
           </Overview>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
